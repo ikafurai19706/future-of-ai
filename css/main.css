@@ -474,6 +474,35 @@ header {
   height: 1px;
 }
 
+.frame-box {
+  margin: 3rem 20% 0 20%;
+	padding: 2rem;
+	position: relative;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.frame-box::before, .frame-box::after {
+	content: '';
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+}
+
+.frame-box::before {
+	border-left: solid 2px #000000;
+	border-top: solid 2px #000000;
+	top: 0;
+	left: 0;
+}
+
+.frame-box::after {
+	border-right: solid 2px #000000;
+	border-bottom: solid 2px #000000;
+	bottom: 0;
+	right: 0;
+}
+
 .top {
   position: relative;
   width: 100%;
