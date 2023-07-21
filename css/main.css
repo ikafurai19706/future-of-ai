@@ -264,10 +264,10 @@ header {
 #humb div {
   position: absolute;
   content: "";
-  transform-origin: center;
+  transform-origin: center center;
   left: 25%;
   width: 50%;
-  height: 1px;
+  height: 0.1px;
   background-color: #404040;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -302,18 +302,15 @@ header {
 
   100% {
     transform: translateY(1rem) rotate(45deg);
-    transform-origin: center;
     background-color: white;
   }
 }
 
 #humb.on div:nth-of-type(2) {
   -webkit-transform: scale(0, 1);
-  -webkit-transform-origin: center center;
   -webkit-transition: 0s;
   -webkit-transition-delay: 0.3s;
   transform: scale(0, 1);
-  transform-origin: center center;
   transition: 0s;
   transition-delay: 0.3s;
 }
@@ -329,7 +326,6 @@ header {
 
   100% {
     transform: translateY(-1rem) rotate(-45deg);
-    transform-origin: center;
     background-color: white;
   }
 }
@@ -341,7 +337,6 @@ header {
 @keyframes humb1_b {
   0% {
     transform: translateY(1rem) rotate(45deg);
-    transform-origin: center;
     background-color: white;
   }
 
@@ -358,11 +353,9 @@ header {
 #humb.off div:nth-of-type(2) {
   background-color: black;
   -webkit-transform: scale(1, 1);
-  -webkit-transform-origin: center center;
   -webkit-transition: 0.3s ease;
   -webkit-transition-delay: 0.3s;
   transform: scale(1, 1);
-  transform-origin: center center;
   transition: 0.3s ease;
   transition-delay: 0.3s;
 }
@@ -374,7 +367,6 @@ header {
 @keyframes humb3_b {
   0% {
     transform: translateY(-1rem) rotate(-45deg);
-    transform-origin: center;
     background-color: white;
   }
 
@@ -480,6 +472,7 @@ header {
 }
 
 .main {
+  text-align: center;
   position: relative;
   z-index: -2;
 }
@@ -490,8 +483,9 @@ header {
 }
 
 .frame-box {
-  margin: 3rem 20% 0 20%;
-	padding: 2rem;
+  display: inline-block;
+  margin: 3rem auto 0 auto;
+	padding: 2rem min(8rem, 10%);
 	position: relative;
   text-align: center;
   font-size: 3rem;
@@ -499,8 +493,8 @@ header {
 
 .frame-box::before, .frame-box::after {
 	content: '';
-	width: 5rem;
-	height: 5rem;
+	width: 4rem;
+	height: 4rem;
 	position: absolute;
 }
 
