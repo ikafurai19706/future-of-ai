@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+span {
+  color: red;
+}
+
 #opening {
   position: fixed;
   width: 100%;
@@ -246,7 +250,7 @@ header {
 #humb {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0%;
   height: 100%;
   aspect-ratio: 1/1;
   opacity: 0;
@@ -399,8 +403,7 @@ header {
   overflow-x: hidden;
   overflow-y: auto;
   transform: translateX(100%);
-  width: 30%;
-  min-width: 20rem;
+  width: 20rem;
   height: 100vh;
   background-color: black;
   visibility: visible;
@@ -586,5 +589,16 @@ footer p {
   #humb div:nth-of-type(3) {
     transform: none;
     transition-delay: 0s;
+  }
+}
+
+@media (max-width:210px) {
+
+  #sidemenu {
+    min-width: 100%;
+  }
+
+  #humb.on {
+    transform: none;
   }
 }
