@@ -551,11 +551,13 @@ header {
 
 footer {
   position: relative;
+  background-color: #2b2b2b;
   width: 100%;
   z-index: -1;
 }
 
 footer p {
+  color: #f0f0f0;
   font-size: 1.2rem;
   text-align: center;
   padding: 8rem 0 2rem 0;
