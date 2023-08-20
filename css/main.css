@@ -597,7 +597,7 @@ footer p {
 @media (max-width:250px) {
 
   #sidemenu {
-    min-width: 100%;
+    max-width: 100%;
   }
 
   #humb.on {
