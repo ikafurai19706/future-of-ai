@@ -541,7 +541,7 @@ header {
   padding: 0;
   transform: translate(-50%, -50%);
   font-weight: 600;
-  font-size: min(max(10vw, 6.4rem), 12.8rem);
+  font-size: min(max(10vw, 6.4rem), 16.0rem);
   color: aliceblue;
   opacity: 0.8;
   white-space: nowrap;
