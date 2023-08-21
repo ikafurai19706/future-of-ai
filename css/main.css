@@ -8,8 +8,8 @@
 html {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-weight: 400;
-  font-size: min(2vw, 10px);
-  scroll-behavior: smooth;
+  font-size: max(5px, min(2vw, 10px));
+   scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
