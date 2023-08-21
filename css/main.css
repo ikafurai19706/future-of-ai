@@ -13,7 +13,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  /*font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;*/
   font-weight: lighter;
 }
 
@@ -533,12 +533,15 @@ header {
 .top h1 {
   position: absolute;
   top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
   font-weight: 600;
   font-size: min(max(10vw, 6.4rem), 12.8rem);
   color: aliceblue;
   opacity: 0.8;
+  white-space: nowrap;
 }
 
 .main p {
