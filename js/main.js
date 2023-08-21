@@ -13,8 +13,15 @@ function load1() {
   }
   [...document.getElementsByTagName("span")].forEach(l => {
     l.style.color = l.className;
-  })
-  ;
+  });
+  var ua = window.navigator.userAgent.toLowerCase();
+  if(ua.indexOf("ipad") > -1
+    || ua.indexOf("macintosh") > -1 && "ontouchend" in document){
+      [...humb.getElementsByTagName("div")].forEach(e => {
+        e.style.height = "1px";
+      })
+  }
+    
 }
 
 function load2() {
