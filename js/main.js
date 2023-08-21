@@ -4,8 +4,8 @@ let m_list = ["humb", "sidebar"]
 
 function load1() {
   if (location.pathname.endsWith("/index.html") || location.pathname.endsWith("/")) {
-    entries = window.performance.getEntriesByType("navigation");
-    if (entries[0].type === "navigate" || entries[0].type === "prerender") {
+    entry = window.performance.navigation.type;
+    if (entry.type === "navigate" || entry.type === "prerender") {
       o_Prog.classList.add("load");
     } else {
       opening.style.display = "none";
