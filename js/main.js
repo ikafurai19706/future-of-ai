@@ -5,10 +5,10 @@ let m_list = ["humb", "sidebar"]
 function load1() {
   if (location.pathname.endsWith("/index.html") || location.pathname.endsWith("/")) {
     entry = window.performance.navigation.type;
-    if (entry.type === "navigate" || entry.type === "prerender") {
-      o_Prog.classList.add("load");
-    } else {
+    if (entry === 1) {
       opening.style.display = "none";
+    } else {
+      o_Prog.classList.add("load");
     }
   }
   [...document.getElementsByTagName("span")].forEach(l => {
