@@ -73,7 +73,22 @@ function menu() {
 }
 
 function header() {
-  header_b.style.height = document.getElementById("h").clientHeight + "px";
+  var vw = document.documentElement.clientWidth;
+  var vh = document.documentElement.clientHeight;
+  var header = document.getElementById("h").clientHeight;
+  var top = (vh-header);
+  var img = t.getElementsByTagName("img")[0];
+  header_b.style.height = header + "px";
+  t.style.height = top + "px";
+  if (vw/vh > 1) {
+    img.style.width = vw + "px";
+    img.style.height = "auto";
+  }
+  else {
+    img.style.width = "auto";
+    img.style.height = "top";
+  }
+
 }
 
 
@@ -84,7 +99,7 @@ window.addEventListener("pageshow", () => {
     o_Filter.classList.add("load");
   }, 300);
   setTimeout(load3, 200);
-  setTimeout(header, 240);
+  setTimeout(header, 300);
   setTimeout(scroll, 500);
 });
 

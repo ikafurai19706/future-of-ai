@@ -515,22 +515,25 @@ header {
 	right: 0;
 }
 
-.top {
+#t {
   position: relative;
   width: 100%;
-  height: fit-content;
-  max-height: max(40rem, 50vh);
+  height: auto;
   background-color: #000000;
   overflow: hidden;
 }
 
-.top img {
+#t img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  height: auto;
+  height: 100%;
+  transform: translate(-50%, -50%);
   opacity: 0.8;
 }
 
-.top h1 {
+#t h1 {
   position: absolute;
   top: 50%;
   left: 50%;
