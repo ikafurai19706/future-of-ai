@@ -9,10 +9,15 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-weight: 400;
   font-size: max(7.5px, min(2vw, 10px));
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   /*font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;*/
   font-weight: lighter;
 }
@@ -485,34 +490,95 @@ header {
   height: 1px;
 }
 
-.frame-box {
-  display: inline-block;
+#frame_box {
+  position: relative;
   margin: 5rem auto 0 auto;
-	padding: 3rem min(8rem, 10%);
-	position: relative;
+  padding: 3rem min(8rem, 10%);
+  width: fit-content;
+  height: fit-content;
+}
+
+#frame_box h1 {
+  display: inline-block;
+  position: relative;
   text-align: center;
   font-size: min(max(5vw, 3.2rem), 4.8rem);
+  visibility: hidden;
 }
 
-.frame-box::before, .frame-box::after {
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
+#frame_box>div {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
 }
 
-.frame-box::before {
-	border-left: solid 2px #000000;
-	border-top: solid 2px #000000;
-	top: 0;
-	left: 0;
+#frame_box div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left top;
+  background-color: black;
+  visibility: visible;
 }
 
-.frame-box::after {
-	border-right: solid 2px #000000;
-	border-bottom: solid 2px #000000;
-	bottom: 0;
-	right: 0;
+#frame_box.load h1 {
+}
+
+#frame_box.load div div {
+  animation: box_load1 1.6s forwards;
+}
+
+@keyframes box_load1 {
+  50% {
+    transform: scaleX(0);
+    transform-origin: left top;
+  }
+
+  74% {
+    transform: scaleX(1);
+    transform-origin: left top;
+  }
+  76% {
+    transform: scaleX(1);
+    transform-origin: right top;
+  }
+
+  100% {
+    transform: scaleX(0);
+  transform-origin: right top;
+  }
+}
+
+#frame_box::before,
+#frame_box::after {
+  content: '';
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+#frame_box::before {
+  border-left: solid 2px #000000;
+  border-top: solid 2px #000000;
+  top: 0;
+  left: 0;
+}
+
+#frame_box::after {
+  border-right: solid 2px #000000;
+  border-bottom: solid 2px #000000;
+  bottom: 0;
+  right: 0;
+}
+
+#frame_box.load::before,
+#frame_box.load::after {
+  opacity: 1;
 }
 
 #t {

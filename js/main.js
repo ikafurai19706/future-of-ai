@@ -60,6 +60,10 @@ function scroll() {
   });
 }
 
+function anime() {
+  frame_box.classList.add("load");
+}
+
 function menu() {
   m_list.forEach(l => {
     var m_id = document.getElementById(l);
@@ -101,6 +105,7 @@ window.addEventListener("pageshow", () => {
   setTimeout(load3, 200);
   setTimeout(header, 300);
   setTimeout(scroll, 500);
+  setTimeout(anime, 2000);
 });
 
 window.addEventListener("resize", () => {
