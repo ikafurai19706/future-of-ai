@@ -520,15 +520,17 @@ header {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left top;
-  background-color: black;
+  background-color: #d8e3f8;
   visibility: visible;
 }
 
 #frame_box.load h1 {
+  transition-delay: 0.9s;
+  visibility: visible;
 }
 
 #frame_box.load div div {
-  animation: box_load1 1.6s forwards;
+  animation: box_load1 1.2s forwards;
 }
 
 @keyframes box_load1 {
@@ -563,15 +565,15 @@ header {
 }
 
 #frame_box::before {
-  border-left: solid 2px #000000;
-  border-top: solid 2px #000000;
+  border-left: solid 2px #005fb1;
+  border-top: solid 2px #005fb1;
   top: 0;
   left: 0;
 }
 
 #frame_box::after {
-  border-right: solid 2px #000000;
-  border-bottom: solid 2px #000000;
+  border-right: solid 2px #005fb1;
+  border-bottom: solid 2px #005fb1;
   bottom: 0;
   right: 0;
 }

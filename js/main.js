@@ -105,7 +105,6 @@ window.addEventListener("pageshow", () => {
   setTimeout(load3, 200);
   setTimeout(header, 300);
   setTimeout(scroll, 500);
-  setTimeout(anime, 2000);
 });
 
 window.addEventListener("resize", () => {
@@ -134,4 +133,10 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 200) {
+    setTimeout(anime, 200);
+  }
 });
