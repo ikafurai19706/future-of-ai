@@ -630,6 +630,11 @@ footer {
   z-index: -1;
 }
 
+footer .bar {
+  height: 1rem;
+  background-color: transparent;
+}
+
 footer p {
   color: #f0f0f0;
   font-size: 1.2rem;
@@ -637,16 +642,84 @@ footer p {
   padding: 8rem 0 2rem 0;
 }
 
+footer .menu {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #2b2b2b;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer .menu li {
+  position: relative;
+  width: 20%;
+  background-color: #2b2b2b;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer .menu li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0.16rem;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+}
+
+footer .menu li a,
+footer .menu li p {
+  position: relative;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1.6rem 0;
+  width: 100%;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  white-space: nowrap;
+}
+
+.heading10 {
+  margin: 5rem 8% 0 8%;
+  text-align: left;
+	position: relative;
+	padding-top: 3rem;
+	font-size: 3rem;
+	border-bottom: 0.2rem solid darkslateblue;
+}
+
+.heading10 span {
+	position: relative;
+	z-index: 2;
+  font-weight: 600;
+}
+
+.heading10::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0px;
+	left: 0;
+	color: rgba(5,62,98,0.2);
+	font-size: 4rem;
+  font-weight: 600;
+	z-index: 1;
+}
 
 
 @media (max-width:800px) {
 
-  .menu {
+  header .menu {
     opacity: 0;
     visibility: hidden;
   }
 
-  .menu .first {
+  header .menu .first {
     transform: translateX(10%);
   }
 

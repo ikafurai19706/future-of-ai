@@ -7,21 +7,23 @@ function load1() {
     entry = window.performance.navigation.type;
     if (entry === 1) {
       opening.style.display = "none";
+      setTimeout(anime, 600);
     } else {
       o_Prog.classList.add("load");
+      setTimeout(anime, 3000);
     }
   }
   [...document.getElementsByTagName("span")].forEach(l => {
     l.style.color = l.className;
   });
   var ua = window.navigator.userAgent.toLowerCase();
-  if(ua.indexOf("ipad") > -1
-    || ua.indexOf("macintosh") > -1 && "ontouchend" in document){
-      [...humb.getElementsByTagName("div")].forEach(e => {
-        e.style.height = "1px";
-      })
+  if (ua.indexOf("ipad") > -1 ||
+    ua.indexOf("macintosh") > -1 && "ontouchend" in document) {
+    [...humb.getElementsByTagName("div")].forEach(e => {
+      e.style.height = "1px";
+    })
   }
-    
+
 }
 
 function load2() {
@@ -37,19 +39,38 @@ function load3() {
 }
 
 function link(l) {
+  var pn = location.pathname.substring(location.pathname.lastIndexOf("/")+1);
+  if (location.pathname.indexOf("#") > -1) {
+    pn = pn.substring(0, pn.indexOf("#"));
+  }
   if (l.indexOf("index.html") > -1) {
     o_Filter.style.backgroundColor = "black";
+  } else {
+    o_Filter.style.backgroundColor = "white";
   }
   o_Filter.style.webkitTransition = "0.4s";
   o_Filter.style.transition = "0.4s";
-  o_Filter.classList.remove("load");
-  setTimeout(() => {
-    window.location.href = l;
-  }, 400);
+  if (pn.indexOf(l) > -1 || l.indexOf(pn) > -1) {
+    m_list.forEach((l) => {
+      var m_id = document.getElementById(l);
+      m_id.classList.remove("on");
+      m_id.classList.remove("off");
+    });
+    if (l.indexOf("#") > -1) {
+      location.href = l;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  } else {
+    o_Filter.classList.remove("load");
+    setTimeout(() => {
+      location.href = l;
+    }, 400);
+  }
 }
 
 function scroll() {
-  const targetId = window.location.hash;
+  const targetId = location.hash;
   console.log(targetId);
   const targetElement = document.querySelector(targetId);
   console.log(targetElement);
@@ -80,17 +101,17 @@ function header() {
   var vw = document.documentElement.clientWidth;
   var vh = document.documentElement.clientHeight;
   var header = document.getElementById("h").clientHeight;
-  var top = (vh-header);
+  var top = (vh - header);
   var img = t.getElementsByTagName("img")[0];
   header_b.style.height = header + "px";
-  t.style.height = top + "px";
-  if (vw/vh > 1) {
+  t.style.height = (top * 0.7) + "px";
+
+  if (vw / vh > 1) {
     img.style.width = vw + "px";
     img.style.height = "auto";
-  }
-  else {
+  } else {
     img.style.width = "auto";
-    img.style.height = "top";
+    img.style.height = vh + "px";
   }
 
 }
@@ -133,10 +154,4 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-});
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY >= 200) {
-    setTimeout(anime, 200);
-  }
 });
