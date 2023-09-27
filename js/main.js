@@ -42,6 +42,8 @@ function link(l) {
   var pn = location.pathname.substring(location.pathname.lastIndexOf("/")+1);
   if (location.pathname.indexOf("#") > -1) {
     pn = pn.substring(0, pn.indexOf("#"));
+  } else if (pn == "") {
+    pn = "index.html";
   }
   if (l.indexOf("index.html") > -1) {
     o_Filter.style.backgroundColor = "black";
