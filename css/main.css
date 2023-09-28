@@ -8,7 +8,7 @@
 html {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-weight: 400;
-  font-size: max(7.5px, min(2vw, 10px));
+  font-size: max(8px, min(2vw, 10px));
   scroll-behavior: smooth;
 }
 
@@ -24,6 +24,9 @@ h6 {
 
 body {
   font-size: 1.6rem;
+}
+body.no_scroll {
+  overflow: hidden;
 }
 
 ul,
@@ -618,9 +621,13 @@ header {
 .main p {
   text-align: left;
   box-sizing: border-box;
-  font-size: 1.8rem;
-  padding: 5rem 10%;
+  font-size: 1.7rem;
+  padding: 5rem 12%;
   line-height: 240%;
+}
+
+.main p.home {
+  font-size: 1.8rem;
 }
 
 footer {
@@ -686,12 +693,16 @@ footer .menu li p {
 }
 
 .heading10 {
-  margin: 5rem 8% 0 8%;
+  margin: 0 8%;
   text-align: left;
 	position: relative;
-	padding-top: 3rem;
-	font-size: 3rem;
+	padding-top: 2.7rem;
+	font-size: 2.7rem;
 	border-bottom: 0.2rem solid darkslateblue;
+}
+
+.heading10:nth-of-type(1) {
+  margin-top: 5rem;
 }
 
 .heading10 span {
@@ -706,7 +717,7 @@ footer .menu li p {
 	top: 0px;
 	left: 0;
 	color: rgba(5,62,98,0.2);
-	font-size: 4rem;
+	font-size: 3.6rem;
   font-weight: 600;
 	z-index: 1;
 }
