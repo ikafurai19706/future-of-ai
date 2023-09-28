@@ -539,21 +539,14 @@ header {
 @keyframes box_load1 {
   50% {
     transform: scaleX(0);
-    transform-origin: left top;
   }
 
-  74% {
+  75% {
     transform: scaleX(1);
-    transform-origin: left top;
-  }
-  76% {
-    transform: scaleX(1);
-    transform-origin: right top;
   }
 
   100% {
-    transform: scaleX(0);
-  transform-origin: right top;
+    transform: scaleX(1) translateX(100%);
   }
 }
 
