@@ -507,13 +507,13 @@ header {
   text-align: center;
   font-size: min(max(5vw, 3.2rem), 4.8rem);
   visibility: hidden;
+	overflow: hidden;
 }
 
 #frame_box>div {
   position: relative;
   width: fit-content;
   height: fit-content;
-  overflow: hidden;
 }
 
 #frame_box div div {
