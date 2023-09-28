@@ -513,6 +513,7 @@ header {
   position: relative;
   width: fit-content;
   height: fit-content;
+  overflow: hidden;
 }
 
 #frame_box div div {
