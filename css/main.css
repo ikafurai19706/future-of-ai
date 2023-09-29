@@ -542,10 +542,12 @@ header {
     transform: scaleX(0);
   }
 
-  75% {
+  73% {
     transform: scaleX(1);
   }
-
+	77％ {
+		transform: scaleX(1);
+	}
   100% {
     transform: scaleX(1) translateX(100%);
   }
