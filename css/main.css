@@ -548,8 +548,11 @@ header {
 	77% {
 		transform: scaleX(1);
 	}
-  100% {
+  99% {
     transform: scaleX(1) translateX(100%);
+  }
+  100% {
+    transform: scaleX(0) translateX(100%);
   }
 }
 
@@ -624,6 +627,15 @@ header {
 
 .main p.home {
   font-size: 1.8rem;
+}
+
+.main b {
+  background: linear-gradient(transparent 60%, #bdf 40%);
+}
+
+#insert {
+  margin: 5rem 10% 0 10%;
+  width: 80%;
 }
 
 footer {
