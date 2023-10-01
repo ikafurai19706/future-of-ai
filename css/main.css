@@ -24,15 +24,12 @@ h6 {
 
 body {
   font-size: 1.6rem;
-  visibility: hidden;
+  position: relative;
+  z-index: -2147483647;
 }
 
 body.no_scroll {
   overflow: hidden;
-}
-
-body * {
-  visibility: visible;
 }
 
 ul,
@@ -148,11 +145,7 @@ a {
   position: relative;
   width: 100%;
   display: none;
-  visibility: hidden;
-}
-
-#cont * {
-  visibility: visible;
+  z-index: -2147483647;
 }
 
 header {
@@ -512,7 +505,7 @@ header {
   height: fit-content;
 }
 
-#frame_box h1 {
+#frame_box h1#text {
   display: inline-block;
   position: relative;
   text-align: center;
@@ -539,7 +532,7 @@ header {
   visibility: visible;
 }
 
-#frame_box.load h1 {
+#frame_box.load h1#text {
   transition-delay: 0.9s;
   visibility: visible;
 }
@@ -561,12 +554,8 @@ header {
     transform: scaleX(1);
   }
 
-  99% {
-    transform: scaleX(1) translateX(100%);
-  }
-
   100% {
-    transform: scaleX(0) translateX(100%);
+    transform: scaleX(1) translateX(101%);
   }
 }
 
