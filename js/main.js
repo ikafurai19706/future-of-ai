@@ -40,7 +40,7 @@ function load3() {
     path = "index.html";
   }
   Array.prototype.forEach.call(document.getElementsByClassName("in_menu"), e => {
-    if (e.href.indexOf() > -1) {
+    if (e.href.indexOf(path) > -1) {
       e.classList.add("now");
     }
   });
