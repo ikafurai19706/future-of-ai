@@ -24,9 +24,15 @@ h6 {
 
 body {
   font-size: 1.6rem;
+  visibility: hidden;
 }
+
 body.no_scroll {
   overflow: hidden;
+}
+
+body * {
+  visibility: visible;
 }
 
 ul,
@@ -142,6 +148,11 @@ a {
   position: relative;
   width: 100%;
   display: none;
+  visibility: hidden;
+}
+
+#cont * {
+  visibility: visible;
 }
 
 header {
@@ -507,7 +518,7 @@ header {
   text-align: center;
   font-size: min(max(5vw, 3.2rem), 4.8rem);
   visibility: hidden;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 #frame_box>div {
@@ -545,12 +556,15 @@ header {
   73% {
     transform: scaleX(1);
   }
-	77% {
-		transform: scaleX(1);
-	}
+
+  77% {
+    transform: scaleX(1);
+  }
+
   99% {
     transform: scaleX(1) translateX(100%);
   }
+
   100% {
     transform: scaleX(0) translateX(100%);
   }
@@ -620,22 +634,23 @@ header {
 .main p {
   text-align: left;
   box-sizing: border-box;
-  font-size: 1.7rem;
-  padding: 5rem 12%;
+  font-size: 1.6rem;
+  padding: 4rem 9%;
   line-height: 240%;
 }
 
 .main p.home {
   font-size: 1.8rem;
+  padding: 8rem 16%;
 }
 
 .main b {
-  background: linear-gradient(transparent 60%, #96f4d8 40%);
+  background: linear-gradient(transparent 65%, #9ee);
 }
 
 #insert {
-  margin: 5rem 10% 0 10%;
-  width: 80%;
+  margin: 4rem 20% 0 20%;
+  width: 60%;
 }
 
 footer {
@@ -703,10 +718,10 @@ footer .menu li p {
 .heading10 {
   margin: 0 8%;
   text-align: left;
-	position: relative;
-	padding-top: 2.7rem;
-	font-size: 2.7rem;
-	border-bottom: 0.2rem solid darkslateblue;
+  position: relative;
+  padding-top: 2.7rem;
+  font-size: 2.7rem;
+  border-bottom: 0.2rem solid darkslateblue;
 }
 
 .heading10:nth-of-type(1) {
@@ -714,20 +729,20 @@ footer .menu li p {
 }
 
 .heading10 span {
-	position: relative;
-	z-index: 2;
+  position: relative;
+  z-index: 2;
   font-weight: 600;
 }
 
 .heading10::before {
-	content: attr(data-text);
-	position: absolute;
-	top: 0px;
-	left: 0;
-	color: rgba(5,62,98,0.2);
-	font-size: 3.6rem;
+  content: attr(data-text);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  color: rgba(5, 62, 98, 0.2);
+  font-size: 3.6rem;
   font-weight: 600;
-	z-index: 1;
+  z-index: 1;
 }
 
 

@@ -35,11 +35,16 @@ function load2() {
 }
 
 function load3() {
+  Array.prototype.forEach.call(document.getElementsByClassName("in_menu"), e => {
+    if (e.href.indexOf(location.pathname.substring(location.pathname.lastIndexOf("/") + 1)) > -1) {
+      e.classList.add("now");
+    }
+  });
   cont.style.display = "block";
 }
 
 function link(l) {
-  var pn = location.pathname.substring(location.pathname.lastIndexOf("/")+1);
+  var pn = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
   if (location.pathname.indexOf("#") > -1) {
     pn = pn.substring(0, pn.indexOf("#"));
   } else if (pn == "") {
@@ -73,11 +78,8 @@ function link(l) {
 
 function scroll() {
   const targetId = location.hash;
-  console.log(targetId);
   const targetElement = document.querySelector(targetId);
-  console.log(targetElement);
   const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
-  console.log(targetOffsetTop)
   window.scrollTo({
     top: targetOffsetTop
   });
