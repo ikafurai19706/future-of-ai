@@ -35,8 +35,12 @@ function load2() {
 }
 
 function load3() {
+  var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
+  if (path == "") {
+    path = "index.html";
+  }
   Array.prototype.forEach.call(document.getElementsByClassName("in_menu"), e => {
-    if (e.href.indexOf(location.pathname.substring(location.pathname.lastIndexOf("/") + 1)) > -1) {
+    if (e.href.indexOf() > -1) {
       e.classList.add("now");
     }
   });
