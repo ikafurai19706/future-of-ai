@@ -634,7 +634,7 @@ header {
 }
 
 .main b {
-  background: linear-gradient(transparent 65%, #9ee);
+  background: linear-gradient(transparent 65%, #9ee 35%);
 }
 
 #insert {
