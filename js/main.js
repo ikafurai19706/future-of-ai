@@ -108,11 +108,8 @@ function menu() {
 function header() {
   var vw = document.documentElement.clientWidth;
   var vh = document.documentElement.clientHeight;
-  var header = document.getElementById("h").clientHeight;
-  var top = (vh - header);
   var img = t.getElementsByTagName("img")[0];
-  header_b.style.height = header + "px";
-  t.style.height = (top * 0.7) + "px";
+  t.style.height = vh * 0.72 + "px";
 
   if (vw / vh > 1) {
     img.style.width = vw + "px";

@@ -1,11 +1,19 @@
-h.innerHTML = 
-`<div class="m_bar">
+h.innerHTML =
+  `<div class="m_bar">
 <ul class="menu">
   <li>
     <a href="javascript:link('index.html')" class="first in_menu">ホーム</a>
   </li>
   <li>
-    <a href="javascript:link('101.html')" class="first in_menu">AIとは</a>
+    <a href="javascript:link('101.html')" class="first in_menu is_parent">AIとは</a>
+    <ul>
+      <li><a href="javascript:link('101.html')">AIって何？</a></li>
+      <li><a href="javascript:link('102.html')">AIの歴史</a></li>
+      <li><a href="">子メニュー</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="javascript:link('201.html')" class="first in_menu is_parent">活用例</a>
     <ul>
       <li><a href="">子メニュー</a></li>
       <li><a href="">子メニュー</a></li>
@@ -13,15 +21,7 @@ h.innerHTML =
     </ul>
   </li>
   <li>
-    <a href="javascript:link('201.html')" class="first in_menu">活用例</a>
-    <ul>
-      <li><a href="">子メニュー</a></li>
-      <li><a href="">子メニュー</a></li>
-      <li><a href="">子メニュー</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="javascript:link('301.html')" class="first in_menu">AIがもたらす未来</a>
+    <a href="javascript:link('301.html')" class="first in_menu is_parent">AIがもたらす未来</a>
     <ul>
       <li><a href="javascript:link('301.html#hoge')">子メニュー</a></li>
       <li><a href="">子メニュー</a></li>
@@ -49,8 +49,8 @@ h.innerHTML =
     <li>
       <a href="javascript:link('101.html')" class="first">AIとは</a>
       <ul>
-        <li><a href="">子メニュー</a></li>
-        <li><a href="">子メニュー</a></li>
+        <li><a href="javascript:link('101.html')">AIって何？</a></li>
+        <li><a href="javascript:link('102.html')">AIの歴史</a></li>
         <li><a href="">子メニュー</a></li>
       </ul>
     </li>
