@@ -5,7 +5,7 @@ h.innerHTML =
     <a href="javascript:link('index.html')" class="first in_menu">ホーム</a>
   </li>
   <li>
-    <a href="javascript:link('page_1.html')" class="first in_menu">AIとは</a>
+    <a href="javascript:link('101.html')" class="first in_menu">AIとは</a>
     <ul>
       <li><a href="">子メニュー</a></li>
       <li><a href="">子メニュー</a></li>
@@ -13,7 +13,7 @@ h.innerHTML =
     </ul>
   </li>
   <li>
-    <a href="javascript:link('page_2.html')" class="first in_menu">活用例</a>
+    <a href="javascript:link('201.html')" class="first in_menu">活用例</a>
     <ul>
       <li><a href="">子メニュー</a></li>
       <li><a href="">子メニュー</a></li>
@@ -21,9 +21,9 @@ h.innerHTML =
     </ul>
   </li>
   <li>
-    <a href="javascript:link('page_3.html')" class="first in_menu">AIがもたらす未来</a>
+    <a href="javascript:link('301.html')" class="first in_menu">AIがもたらす未来</a>
     <ul>
-      <li><a href="javascript:link('page_3.html#hoge')">子メニュー</a></li>
+      <li><a href="javascript:link('301.html#hoge')">子メニュー</a></li>
       <li><a href="">子メニュー</a></li>
       <li><a href="">子メニュー</a></li>
     </ul>
@@ -47,7 +47,7 @@ h.innerHTML =
       <a href="javascript:link('index.html')" class="first">ホーム</a>
     </li>
     <li>
-      <a href="javascript:link('page_1.html')" class="first">AIとは</a>
+      <a href="javascript:link('101.html')" class="first">AIとは</a>
       <ul>
         <li><a href="">子メニュー</a></li>
         <li><a href="">子メニュー</a></li>
@@ -55,7 +55,7 @@ h.innerHTML =
       </ul>
     </li>
     <li>
-      <a href="javascript:link('page_2.html')" class="first">活用例</a>
+      <a href="javascript:link('201.html')" class="first">活用例</a>
       <ul>
         <li><a href="">子メニュー</a></li>
         <li><a href="">子メニュー</a></li>
@@ -63,9 +63,9 @@ h.innerHTML =
       </ul>
     </li>
     <li>
-      <a href="javascript:link('page_3.html')" class="first">AIがもたらす未来</a>
+      <a href="javascript:link('301.html')" class="first">AIがもたらす未来</a>
       <ul>
-        <li><a href="javascript:link('page_3.html#hoge')">子メニュー</a></li>
+        <li><a href="javascript:link('301.html#hoge')">子メニュー</a></li>
         <li><a href="">子メニュー</a></li>
         <li><a href="">子メニュー</a></li>
       </ul>
