@@ -35,15 +35,24 @@ function load2() {
 }
 
 function load3() {
+  document.getElementsByTagName("footer")[0].classList.remove("invisible");
   var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
   if (path == "") {
     path = "index.html";
   }
-  Array.prototype.forEach.call(document.getElementsByClassName("in_menu"), e => {
-    if (e.href.indexOf(path) > -1) {
-      e.classList.add("now");
-    }
-  });
+  in_menu = document.getElementsByClassName("in_menu");
+  if (path == "index.html") {
+    in_menu[0].classList.add("now");
+  }
+  else if (path.match(/1\d{2}.html/)) {
+    in_menu[1].classList.add("now");
+  }
+  else if (path.match(/2\d{2}.html/)) {
+    in_menu[2].classList.add("now");
+  }
+  else if (path.match(/3\d{2}.html/)) {
+    in_menu[3].classList.add("now");
+  }
   cont.style.display = "block";
 }
 
@@ -74,6 +83,7 @@ function link(l) {
     }
   } else {
     o_Filter.classList.remove("load");
+    document.getElementsByTagName("footer")[0].classList.add("invisible");
     setTimeout(() => {
       location.href = l;
     }, 400);
