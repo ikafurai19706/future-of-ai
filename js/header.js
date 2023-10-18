@@ -72,5 +72,4 @@ h.innerHTML =
     </li>
   </ul>
 </div>
-</div>
-<div class="bar"></div>`;
+</div>`;
