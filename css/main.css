@@ -626,6 +626,15 @@ header {
   background-color: white;
 }
 
+.main h3 {
+  text-align: left;
+  position: relative;
+  padding-top: 1.5rem;
+  font-size: 2.7rem;
+  margin: 5rem 5% 0 5%;
+  border-left: 0.4rem solid #7db4e6;
+}
+
 .main p {
   text-align: left;
   box-sizing: border-box;
