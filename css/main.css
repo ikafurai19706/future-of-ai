@@ -634,16 +634,18 @@ header .menu .now::after {
   font-weight: 600;
   text-align: left;
   position: relative;
+  padding: 1rem;
   padding-left: 1rem;
-  margin-left: 5%;
+  margin: 0 8%;
   border-left: 0.4rem solid darkslateblue;
+  background-color: #f2f2ff;
 }
 
 .main p {
   text-align: left;
   box-sizing: border-box;
   font-size: 1.7rem;
-  padding: 4rem 10%;
+  padding: 5rem 10%;
   line-height: 240%;
 }
 
@@ -658,6 +660,10 @@ header .menu .now::after {
 
 .main b {
   background: linear-gradient(transparent 65%, #9ee 35%);
+}
+
+.main b.no_line {
+  background: transparent;
 }
 
 #insert {
@@ -788,7 +794,7 @@ footer .menu li p {
   text-align: left;
   position: relative;
   padding-top: 2.1rem;
-  font-size: 2.7rem;
+  font-size: 3rem;
   margin: 5rem 5% 0 5%;
   border-bottom: 0.2rem solid darkslateblue;
 }
