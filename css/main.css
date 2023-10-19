@@ -634,11 +634,11 @@ header .menu .now::after {
   font-weight: 600;
   text-align: left;
   position: relative;
-  padding: 1rem;
+  padding: 1.6rem;
   padding-left: 1rem;
   margin: 0 8%;
   border-left: 0.4rem solid darkslateblue;
-  background-color: #f2f2ff;
+  background-color: #f4f8ff;
 }
 
 .main p {
