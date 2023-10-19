@@ -634,11 +634,10 @@ header .menu .now::after {
   font-weight: 600;
   text-align: left;
   position: relative;
-  padding: 1.6rem;
-  padding-left: 1rem;
+  padding: 0.8rem;
+  padding-left: 2rem;
   margin: 0 8%;
   border-left: 0.4rem solid darkslateblue;
-  background-color: #f4f8ff;
 }
 
 .main p {
@@ -794,7 +793,7 @@ footer .menu li p {
   text-align: left;
   position: relative;
   padding-top: 2.1rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 5rem 5% 0 5%;
   border-bottom: 0.2rem solid darkslateblue;
 }
@@ -811,7 +810,7 @@ footer .menu li p {
   top: 0;
   left: 0;
   color: rgba(5, 62, 98, 0.2);
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 600;
   z-index: 1;
 }
