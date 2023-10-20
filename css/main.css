@@ -277,41 +277,47 @@ header .menu .now::after {
 }
 
 #humb.on {
-  transform: translateX(calc(5.4rem - 24rem));
+  transform: translateX(calc(6.6rem - 24rem));
   transition: 0.3s;
 }
 
-#humb div {
+#humb > div {
+  position: relative;
+  margin: 30% 25%;
+  width: 50%;
+  height: 40%;
+  background-color: white;
+}
+
+#humb div div {
   position: absolute;
   content: "";
-  transform-origin: center center;
-  left: 25%;
-  width: 50%;
-  height: 0.1px;
+  width: 100%;
+  height: 0.1rem;
   background-color: #404040;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-#humb div:nth-of-type(1) {
-  top: 33%;
+#humb div div:nth-of-type(1) {
+  top: 0%;
   transform: translateX(-100%);
   transition-delay: 0s;
 }
 
-#humb div:nth-of-type(2) {
+#humb div div:nth-of-type(2) {
   top: 50%;
   transform: translateX(-100%);
   transition-delay: 0.05s;
 }
 
-#humb div:nth-of-type(3) {
-  top: 67%;
+#humb div div:nth-of-type(3) {
+  top: 100%;
   transform: translateX(-100%);
   transition-delay: 0.1s;
 }
 
-#humb.on div:nth-of-type(1) {
+#humb.on div div:nth-of-type(1) {
   animation: humb1_a 0.6s forwards;
 }
 
@@ -326,7 +332,7 @@ header .menu .now::after {
   }
 }
 
-#humb.on div:nth-of-type(2) {
+#humb.on div div:nth-of-type(2) {
   -webkit-transform: scale(0, 1);
   -webkit-transition: 0s;
   -webkit-transition-delay: 0.3s;
@@ -335,7 +341,7 @@ header .menu .now::after {
   transition-delay: 0.3s;
 }
 
-#humb.on div:nth-of-type(3) {
+#humb.on div div:nth-of-type(3) {
   animation: humb3_a 0.6s forwards;
 }
 
@@ -350,7 +356,7 @@ header .menu .now::after {
   }
 }
 
-#humb.off div:nth-of-type(1) {
+#humb.off div div:nth-of-type(1) {
   animation: humb1_b 0.6s forwards;
 }
 
@@ -370,7 +376,7 @@ header .menu .now::after {
   }
 }
 
-#humb.off div:nth-of-type(2) {
+#humb.off div div:nth-of-type(2) {
   background-color: black;
   -webkit-transform: scale(1, 1);
   -webkit-transition: 0.3s ease;
@@ -380,7 +386,7 @@ header .menu .now::after {
   transition-delay: 0.3s;
 }
 
-#humb.off div:nth-of-type(3) {
+#humb.off div div:nth-of-type(3) {
   animation: humb3_b 0.6s forwards;
 }
 
@@ -832,16 +838,16 @@ footer .menu li p {
     visibility: visible;
   }
 
-  #humb div:nth-of-type(1) {
+  #humb div div:nth-of-type(1) {
     transform: none;
     transition-delay: 0.1s;
   }
 
-  #humb div:nth-of-type(2) {
+  #humb div div:nth-of-type(2) {
     transform: none;
   }
 
-  #humb div:nth-of-type(3) {
+  #humb div div:nth-of-type(3) {
     transform: none;
     transition-delay: 0s;
   }

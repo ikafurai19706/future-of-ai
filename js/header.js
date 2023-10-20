@@ -30,9 +30,11 @@ h.innerHTML =
   </li>
 </ul>
 <div id="humb" onclick="menu()">
-  <div></div>
-  <div></div>
-  <div></div>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </div>
 <div id="sidebar">
   <div id="screen" onclick="menu()">
