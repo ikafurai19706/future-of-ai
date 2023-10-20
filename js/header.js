@@ -8,8 +8,8 @@ h.innerHTML =
     <a href="javascript:link('101.html')" class="first in_menu is_parent">AIとは</a>
     <ul>
       <li><a href="javascript:link('101.html')">AIって何？</a></li>
-      <li><a href="javascript:link('102.html')">AIの歴史</a></li>
-      <li><a href="">子メニュー</a></li>
+      <li><a href="javascript:link('102.html')">種類</a></li>
+      <li><a href="javascript:link('103.html')">歴史</a></li>
     </ul>
   </li>
   <li>
@@ -50,8 +50,8 @@ h.innerHTML =
       <a href="javascript:link('101.html')" class="first">AIとは</a>
       <ul>
         <li><a href="javascript:link('101.html')">AIって何？</a></li>
-        <li><a href="javascript:link('102.html')">AIの歴史</a></li>
-        <li><a href="">子メニュー</a></li>
+        <li><a href="javascript:link('102.html')">種類</a></li>
+        <li><a href="javascript:link('103.html')">歴史</a></li>
       </ul>
     </li>
     <li>
