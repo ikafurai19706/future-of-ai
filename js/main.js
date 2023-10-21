@@ -35,7 +35,6 @@ function load2() {
 }
 
 function load3() {
-  document.getElementsByTagName("footer")[0].classList.remove("invisible");
   var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
   if (path == "") {
     path = "index.html";
@@ -83,7 +82,6 @@ function link(l) {
     }
   } else {
     o_Filter.classList.remove("load");
-    document.getElementsByTagName("footer")[0].classList.add("invisible");
     setTimeout(() => {
       location.href = l;
     }, 400);

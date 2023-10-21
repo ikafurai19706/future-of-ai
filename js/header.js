@@ -38,12 +38,11 @@ h.innerHTML =
 </div>
 <div id="sidebar">
   <div id="screen" onclick="menu()">
-    <a>&nbsp;</a>
   </div>
   <div id="">
   <ul id="sidemenu">
     <li>
-      <a class="first">&nbsp;</a>
+      <a class="first no_select">　</a>
     </li>
     <li>
       <a href="javascript:link('index.html')" class="first">ホーム</a>
