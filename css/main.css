@@ -656,6 +656,10 @@ header .menu .now::after {
   line-height: 240%;
 }
 
+.main p.big {
+  font-size: 1.8rem;
+}
+
 .main p.narrow {
   padding: 3rem 10%;
 }
@@ -782,17 +786,6 @@ footer .menu li:not(:first-child):after {
   transform: translate(-50%, -50%);
   background-color: whitesmoke;
 }
-
-/*footer .menu li::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 0.5rem;
-  height: 0.5rem;
-  transform: translate(50%, -50%);
-  background-color: whitesmoke;
-}*/
 
 footer .menu li a,
 footer .menu li p {
