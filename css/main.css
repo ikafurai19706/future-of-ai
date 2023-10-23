@@ -656,8 +656,15 @@ header .menu .now::after {
   line-height: 240%;
 }
 
-.main p.big {
-  font-size: 1.8rem;
+.main .big {
+  font-size: larger;
+}
+
+.main .emphasis {
+  padding: 0;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 600;
 }
 
 .main p.narrow {
@@ -671,6 +678,13 @@ header .menu .now::after {
 
 .main b {
   background: linear-gradient(transparent 65%, #9ee 35%);
+}
+
+.main span.emphasis {
+  background: linear-gradient(to right, #bee, #bbe);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 40%;
 }
 
 .main b.no_line {
@@ -695,22 +709,29 @@ header .menu .now::after {
   background-color: white;
   display: inline-block;
   position: relative;
-  margin: 2rem;
-  padding: 2.4rem 20%;
+  margin: 5%;
+  padding: 5rem 20%;
   white-space: nowrap;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   box-shadow: 0.3rem 0.4rem 0.5rem #8882;
   transition: 0.3s;
 }
 
+.main .page_move a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .main .page_move a:first-child {
-  margin-right: 0.5rem;
+  margin-right: 2%;
   text-align: left;
 }
 
 .main .page_move a:last-child {
-  margin-left: 0.5rem;
+  margin-left: 2%;
   text-align: right;
 }
 
