@@ -15,9 +15,9 @@ h.innerHTML =
   <li>
     <a href="javascript:link('201.html')" class="first in_menu is_parent">活用例</a>
     <ul>
-      <li><a href="">子メニュー</a></li>
-      <li><a href="">子メニュー</a></li>
-      <li><a href="">子メニュー</a></li>
+      <li><a href="">身近なAI</a></li>
+      <li><a href="">世界の活用例</a></li>
+      <li><a href="">実際にやってみた</a></li>
     </ul>
   </li>
   <li>
@@ -58,9 +58,9 @@ h.innerHTML =
     <li>
       <a href="javascript:link('201.html')" class="first">活用例</a>
       <ul>
-        <li><a href="">子メニュー</a></li>
-        <li><a href="">子メニュー</a></li>
-        <li><a href="">子メニュー</a></li>
+        <li><a href="">身近なAI</a></li>
+        <li><a href="">世界の活用例</a></li>
+        <li><a href="">実際にやってみた</a></li>
       </ul>
     </li>
     <li>
