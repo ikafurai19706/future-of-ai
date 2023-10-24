@@ -10,6 +10,7 @@ h.innerHTML =
       <li><a href="javascript:link('101.html')">AIって何？</a></li>
       <li><a href="javascript:link('102.html')">さまざまな種類</a></li>
       <li><a href="javascript:link('103.html')">AIの歴史</a></li>
+      <li><a href="javascript:link('104.html')">AIの懸念点</a></li>
     </ul>
   </li>
   <li>
@@ -53,6 +54,7 @@ h.innerHTML =
         <li><a href="javascript:link('101.html')">AIって何？</a></li>
         <li><a href="javascript:link('102.html')">さまざまな種類</a></li>
         <li><a href="javascript:link('103.html')">AIの歴史</a></li>
+        <li><a href="javascript:link('104.html')">AIの懸念点</a></li>
       </ul>
     </li>
     <li>
