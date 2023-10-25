@@ -541,6 +541,7 @@ header .menu .now::after {
   font-weight: 300;
   transition-delay: 0.9s;
   visibility: visible;
+  white-space: nowrap;
 }
 
 #frame_box.load div div {
