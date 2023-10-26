@@ -514,6 +514,7 @@ header .menu .now::after {
   display: inline-block;
   position: relative;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, YuGothic, "Yu Gothic Medium", "Yu Gothic", Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, Verdana, Meiryo, sans-serif;
   font-size: min(max(5vw, 3.2rem), 4.8rem);
   visibility: hidden;
   overflow: hidden;
