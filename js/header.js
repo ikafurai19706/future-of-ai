@@ -5,7 +5,7 @@ h.innerHTML =
     <a href="javascript:link('index.html')" class="first in_menu">ホーム</a>
   </li>
   <li>
-    <a class="first in_menu is_parent">AIとは</a>
+    <a class="first in_menu is_parent" href="javascript:link('101.html')">AIとは</a>
     <ul>
       <li><a href="javascript:link('101.html')">AIって何？</a></li>
       <li><a href="javascript:link('102.html')">さまざまな種類</a></li>
@@ -14,7 +14,7 @@ h.innerHTML =
     </ul>
   </li>
   <li>
-    <a class="first in_menu is_parent">活用例</a>
+    <a class="first in_menu is_parent" href="javascript:link('201.html')">活用例</a>
     <ul>
       <li><a href="javascript:link('201.html')">身近なAI</a></li>
       <li><a href="javascript:link('202.html')">世界の活用例</a></li>
