@@ -20,10 +20,32 @@
     <div id="o_Filter"></div>
     <header id="h"></header>
     <script src="js/header.js"></script>
-
     <div class="main">
       <figure id="t">
-        <img src="img/img.png">
+        <!-- スライド（コンテンツ） -->
+        <div id="slide" class="slide">
+          <div>
+            <img src="img/img.png">
+          </div>
+          <div>
+            <video webkit-playsinline playsinline muted autoplay loop>
+              <source src="vid/ChatGPT.mp4" type="video/mp4">
+              <p>動画を再生できません</p>
+            </video>
+          </div>
+          <div>
+            <p>スライド３</p>
+          </div>
+        </div>
+        <!-- 左右のボタン -->
+        <span id="prev" class="prev"></span>
+        <span id="next" class="next"></span>
+        <!-- インジケーター -->
+        <ul class="indicator" id="indicator">
+          <li class="list"></li>
+          <li class="list"></li>
+          <li class="list"></li>
+        </ul>
         <h1>FUTURE of AI.</h1>
       </figure>
       <div id="grid">
