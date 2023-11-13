@@ -807,12 +807,28 @@ header .menu .now::after {
 }
 
 .heading-center {
+  display: inline-block;
   text-align: center;
   position: relative;
-  padding: 1rem 0;
+  padding: 0 10rem;
   font-size: 2.8rem;
-  margin: 3rem 5% 0 5%;
-  border-bottom: 0.2rem solid darkslateblue;
+  margin: auto;
+  margin-top: 3rem;
+  border-bottom:  solid 0.3rem darkslateblue;
+}
+
+.link {
+  position: relative;
+  height: 14rem;
+  margin: 0 10% 6rem 10%;
+  border: solid 1px black;
+}
+
+.link img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 #page_move {
