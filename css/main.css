@@ -613,7 +613,7 @@ header .menu .now::after {
   position: relative;
   width: 33.33%;
   height: 100%;
-  font-size: 16px;
+  font-size: 1.6rem;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -633,9 +633,9 @@ header .menu .now::after {
 /* ↓ 左右のボタン */
 .next {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  right: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 1rem;
   bottom: 50%;
   z-index: 10;
   cursor: pointer;
@@ -646,9 +646,9 @@ header .menu .now::after {
 }
 .prev {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 2.5rem;
   bottom: 50%;
   z-index: 10;
   cursor: pointer;
@@ -661,9 +661,9 @@ header .menu .now::after {
 .indicator {
   width: 100%;
   position: absolute;
-  bottom: 20px;
+  bottom: 2rem;
   display: flex;
-  column-gap: 18px;
+  column-gap: 1.8rem;
   z-index: 10;
   justify-content: center;
   align-items: center;
@@ -674,6 +674,7 @@ header .menu .now::after {
   border-radius: 50%;
   list-style: none;
   background-color: white;
+  border: solid 2px #000;
   cursor: pointer;
 }
 .indicator li:first-of-type {
