@@ -8,7 +8,7 @@ let count = 0;
 let autoPlayInterval;
 function updateListBackground() {
   for (let i = 0; i < lists.length; i++) {
-    lists[i].style.backgroundColor = i === count % totalSlides ? '#000' : '#fff';
+    lists[i].style.backgroundColor = i === count % totalSlides ? 'black' : 'white';
   }
 }
 function nextClick() {
@@ -25,7 +25,7 @@ function prevClick() {
   updateListBackground();
 }
 function startAutoPlay() {
-  autoPlayInterval = setInterval(nextClick, 6000);
+  autoPlayInterval = setInterval(nextClick, 8000);
 }
 function resetAutoPlayInterval() {
   clearInterval(autoPlayInterval);
