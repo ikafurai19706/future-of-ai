@@ -600,16 +600,17 @@ header .menu .now::after {
   position: relative;
   width: 100%;
   height: auto;
+  background-color: black;
   overflow: hidden;
 }
 
-.slide { /*スライド全体 */
+.slide {
   width: 300%;
   height: 100%;
   display: flex;
   transition: all 2s;
 }
-.slide div { /* スライド */
+.slide div {
   position: relative;
   width: 33.33%;
   height: 100%;
@@ -621,16 +622,16 @@ header .menu .now::after {
   overflow: hidden;
   background-color: #000000;
 }
-.slide1 { /* スライドさせるために必要なクラス */
+.slide1 {
   transform: translateX(0);
 }
-.slide2 { /* スライドさせるために必要なクラス */
+.slide2 {
   transform: translateX(-33.33%);
 }
-.slide3 { /* スライドさせるために必要なクラス */
+.slide3 {
   transform: translateX(-66.66%);
 }
-/* ↓ 左右のボタン */
+
 .next {
   position: absolute;
   width: 1.5rem;
@@ -657,7 +658,7 @@ header .menu .now::after {
   -webkit-transform: rotate(-135deg) translateY(-50%);
   transform: rotate(-135deg) translateY(-50%);
 }
-/* ↓ インジケーター */
+
 .indicator {
   width: 100%;
   position: absolute;
@@ -669,12 +670,12 @@ header .menu .now::after {
   align-items: center;
 }
 .indicator li {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   list-style: none;
   background-color: white;
-  border: solid 2px #000;
+  border: solid 2px black;
   cursor: pointer;
 }
 .indicator li:first-of-type {
@@ -776,6 +777,42 @@ header .menu .now::after {
 #insert {
   margin-top: 4rem;
   width: 70%;
+}
+
+.heading10 {
+  text-align: left;
+  position: relative;
+  padding-top: 2.1rem;
+  font-size: 2.8rem;
+  margin: 5rem 5% 0 5%;
+  border-bottom: 0.2rem solid darkslateblue;
+}
+
+.heading10 span {
+  color: #112;
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+}
+
+.heading10::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(5, 62, 98, 0.2);
+  font-size: 3.2rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.heading-center {
+  text-align: center;
+  position: relative;
+  padding: 1rem 0;
+  font-size: 2.8rem;
+  margin: 3rem 5% 0 5%;
+  border-bottom: 0.2rem solid darkslateblue;
 }
 
 #page_move {
@@ -906,33 +943,6 @@ footer .menu li p {
 
 footer .menu li a:hover {
   color: gray;
-}
-
-.heading10 {
-  text-align: left;
-  position: relative;
-  padding-top: 2.1rem;
-  font-size: 2.8rem;
-  margin: 5rem 5% 0 5%;
-  border-bottom: 0.2rem solid darkslateblue;
-}
-
-.heading10 span {
-  color: #112;
-  position: relative;
-  z-index: 2;
-  font-weight: 600;
-}
-
-.heading10::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: rgba(5, 62, 98, 0.2);
-  font-size: 3.2rem;
-  font-weight: 600;
-  z-index: 1;
 }
 
 
