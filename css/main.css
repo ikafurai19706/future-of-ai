@@ -662,7 +662,7 @@ header .menu .now::after {
 }
 
 .next:hover, .prev:hover {
-  border-color: #404040;
+  border-color: #888888;
 }
 
 .indicator {
