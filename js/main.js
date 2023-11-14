@@ -4,6 +4,9 @@ let m_list = ["humb", "sidebar"]
 
 function load1() {
   if (location.pathname.endsWith("/index.html") || location.pathname.endsWith("/")) {
+    fetch('js/slide.js').then(r=>{return r.text()}).then(t=>{
+      eval(t);
+    });
     entry = window.performance.navigation.type;
     if (entry === 1) {
       opening.style.display = "none";
@@ -99,9 +102,6 @@ function scroll() {
 
 function anime() {
   frame_box.classList.add("load");
-  fetch('js/slide.js').then(r=>{return r.text()}).then(t=>{
-    eval(t);
-  });
 }
 
 function menu() {

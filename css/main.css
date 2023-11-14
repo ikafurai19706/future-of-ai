@@ -608,7 +608,7 @@ header .menu .now::after {
   width: 300%;
   height: 100%;
   display: flex;
-  transition: all 2s;
+  transition: 1.6s;
 }
 .slide div {
   position: relative;
@@ -640,10 +640,11 @@ header .menu .now::after {
   bottom: 50%;
   z-index: 10;
   cursor: pointer;
-  border-top: solid 3px #000;
-  border-right: solid 3px #000;
+  border-top: solid 3px white;
+  border-right: solid 3px white;
   -webkit-transform: rotate(45deg) translateY(50%);
   transform: rotate(45deg) translateY(50%);
+  transition: border 0.4s;
 }
 .prev {
   position: absolute;
@@ -653,10 +654,15 @@ header .menu .now::after {
   bottom: 50%;
   z-index: 10;
   cursor: pointer;
-  border-top: solid 3px #000;
-  border-right: solid 3px #000;
+  border-top: solid 3px white;
+  border-right: solid 3px white;
   -webkit-transform: rotate(-135deg) translateY(-50%);
   transform: rotate(-135deg) translateY(-50%);
+  transition: border 0.4s;
+}
+
+.next:hover, .prev:hover {
+  border-color: #404040;
 }
 
 .indicator {
@@ -677,6 +683,7 @@ header .menu .now::after {
   background-color: white;
   border: solid 2px black;
   cursor: pointer;
+  transition: background-color 0.4s;
 }
 .indicator li:first-of-type {
   background-color: black;
