@@ -17,7 +17,7 @@ h.innerHTML =
     <a class="first in_menu is_parent" href="javascript:link('201.html')">活用例</a>
     <ul>
       <li><a href="javascript:link('201.html')">身近なAI</a></li>
-      <li><a href="javascript:link('202.html')">世界の活用例</a></li>
+      <li><a href="javascript:link('202.html')">企業の活用例</a></li>
       <li><a href="javascript:link('203.html')">実際にやってみた</a></li>
     </ul>
   </li>
@@ -61,7 +61,7 @@ h.innerHTML =
       <a href="javascript:link('201.html')" class="first">活用例</a>
       <ul>
         <li><a href="">身近なAI</a></li>
-        <li><a href="">世界の活用例</a></li>
+        <li><a href="">企業の活用例</a></li>
         <li><a href="">実際にやってみた</a></li>
       </ul>
     </li>

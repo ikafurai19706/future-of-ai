@@ -608,7 +608,7 @@ header .menu .now::after {
   width: 300%;
   height: 100%;
   display: flex;
-  transition: 1.6s;
+  transition: 1.2s;
 }
 .slide div {
   position: relative;
@@ -620,7 +620,7 @@ header .menu .now::after {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: #000000;
+  background-color: black;
 }
 .slide1 {
   transform: translateX(0);
@@ -817,11 +817,12 @@ header .menu .now::after {
   display: inline-block;
   text-align: center;
   position: relative;
-  padding: 0 10rem;
-  font-size: 2.8rem;
-  margin: auto;
+  padding: 2rem 10rem;
+  font-size: 3rem;
+  margin: auto 10%;
   margin-top: 3rem;
-  border-bottom:  solid 0.3rem darkslateblue;
+  border-top: solid 0.3rem darkslateblue;
+  border-bottom: solid 0.3rem darkslateblue;
 }
 
 .link {
@@ -848,7 +849,7 @@ header .menu .now::after {
   transform: translate(-50%, -50%);
 }
 
-.link div::after {
+.link div:first-of-type::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -863,6 +864,44 @@ header .menu .now::after {
   margin: 2rem 10% 0 10%;
   font-size: 2rem;
   border-bottom: solid 1px black;
+}
+
+.link ul {
+  margin: 0.5rem 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link li {
+  position: relative;
+  width: 50%;
+  margin: 0.5rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.link li::after {
+  position: absolute;
+  content: "";
+  height: 0.5rem;
+  aspect-ratio: 1;
+  top: 55%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  border-top: solid 2px steelblue;
+  border-right: solid 2px steelblue;
+}
+
+.link a {
+  display: block;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+#blank {
+  height: 8rem;
 }
 
 #page_move {
@@ -881,7 +920,7 @@ header .menu .now::after {
   margin: 5%;
   padding: 5rem 20%;
   white-space: nowrap;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   box-shadow: 0.3rem 0.4rem 0.5rem #8882;
   transition: 0.3s;
@@ -941,11 +980,24 @@ footer .bar {
   background-color: transparent;
 }
 
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+footer figure {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 footer p {
   color: #f0f0f0;
   font-size: 1.2rem;
   text-align: center;
-  padding: 8rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 footer .menu {
@@ -1029,6 +1081,10 @@ footer .menu li a:hover {
 
   #grid {
     grid-template-columns: 0% 100% 0%;
+  }
+
+  footer .footer-grid {
+    display: block;
   }
 }
 

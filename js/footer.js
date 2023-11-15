@@ -14,4 +14,7 @@ f.innerHTML =
       <a class="foo">工事中</a>
     </li>
   </ul>
-  <p>©1192 FoAI team. ALL Rights Reserved.</p>`;
+  <div class="footer-grid">
+    <figure><p>このサイトは 全国中学高校Webコンテスト の出場作品です。</p></figure>
+    <figure><p>©2023 FoAI team - ALL Rights Reserved.</p></figure>
+  </div>`;
