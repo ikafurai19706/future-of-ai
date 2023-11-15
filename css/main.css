@@ -895,7 +895,7 @@ header .menu .now::after {
 .link a {
   display: block;
   color: black;
-  font-size: 1.4rem;
+  font-size: clamp(0.5rem, calc(0.25vw + 0.8rem), 1.8rem);
   font-weight: 300;
   text-align: left;
 }
