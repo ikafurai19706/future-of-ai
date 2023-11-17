@@ -15,6 +15,6 @@ f.innerHTML =
     </li>
   </ul>
   <div class="footer-grid">
-    <figure><p>このサイトは 全国中学高校Webコンテスト の出場作品です。</p></figure>
+    <figure><p>このサイトは 全国中学高校Webコンテスト の出場作品です。 </p></figure>
     <figure><p>©2023 FoAI team - ALL Rights Reserved.</p></figure>
   </div>`;
