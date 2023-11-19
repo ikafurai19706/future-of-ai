@@ -121,7 +121,7 @@ function header() {
   var vh = document.documentElement.clientHeight;
   var img = t.getElementsByTagName("img")[0];
   var vid = t.getElementsByTagName("video")[0];
-  t.style.height = vh * 0.72 + "px";
+  t.style.height = vh * 0.6 + "px";
 
   if (vw / vh > 1) {
     img.style.width = vw + "px";
