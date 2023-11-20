@@ -781,9 +781,22 @@ header .menu .now::after {
   background: transparent;
 }
 
-#insert {
+.insert {
   margin-top: 4rem;
   width: 70%;
+}
+
+.force_aspect_ratio {
+  display: flex;
+  margin: 0 auto !important;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.force_aspect_ratio img {
+  width: 100%;
 }
 
 .heading10 {
