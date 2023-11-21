@@ -781,8 +781,23 @@ header .menu .now::after {
   background: transparent;
 }
 
+.main figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .insert {
   margin-top: 4rem;
+  width: 70%;
+}
+
+.main figcaption {
+  text-align: right;
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  color: gray;
   width: 70%;
 }
 
@@ -994,7 +1009,7 @@ footer .bar {
 }
 
 footer .footer-grid {
-  display:block;
+  display: block;
 }
 
 footer figure {
