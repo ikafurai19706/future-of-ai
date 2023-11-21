@@ -59,16 +59,16 @@ h.innerHTML =
     <li>
       <a href="javascript:link('201.html')" class="first">活用例</a>
       <ul>
-        <li><a href="">身近なAI</a></li>
-        <li><a href="">企業の活用例</a></li>
-        <li><a href="">実際にやってみた</a></li>
+        <li><a href="javascript:link('201.html')">身近なAI</a></li>
+        <li><a href="javascript:link('202.html')">企業の活用例</a></li>
+        <li><a href="javascript:link('203.html')">実際にやってみた</a></li>
       </ul>
     </li>
     <li>
       <a href="javascript:link('301.html')" class="first">AIがもたらす未来</a>
       <ul>
-        <li><a href="javascript:link('301.html#hoge')">2045年問題</a></li>
-        <li><a href="">世界に起こる変化</a></li>
+        <li><a href="javascript:link('301.html')">2045年問題</a></li>
+        <li><a href="javascript:link('302.html')">世界に起こる変化</a></li>
       </ul>
     </li>
   </ul>
