@@ -2,10 +2,10 @@ f.innerHTML =
   `<div class="bar"></div>
   <ul class="menu">
     <li>
-      <a href="javascript:link('index.html')" class="foo">サイトマップ</a>
+      <a href="javascript:link('sitemap.html')" class="foo">サイトマップ</a>
     </li>
     <li>
-      <a href="javascript:link('sitemap.html')" class="foo">参考文献</a>
+      <a href="javascript:link('reference.html')" class="foo">参考文献</a>
     </li>
     <li>
       <a href="javascript:link('member.html')" class="foo">メンバー</a>
