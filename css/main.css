@@ -598,6 +598,7 @@ header .menu .now::after {
 
 #t {
   position: relative;
+  display: block;
   width: 100%;
   height: auto;
   background-color: black;
@@ -610,6 +611,7 @@ header .menu .now::after {
   display: flex;
   transition: 1.2s;
 }
+
 .slide div {
   position: relative;
   width: 33.33%;
@@ -766,6 +768,11 @@ header .menu .now::after {
   padding: 8rem 16%;
 }
 
+.main .caption {
+  font-size: 1.2rem;
+  color: gray;
+}
+
 .main b {
   background: linear-gradient(transparent 65%, #9ee 35%);
 }
@@ -787,6 +794,8 @@ header .menu .now::after {
   align-items: center;
   justify-content: center;
 }
+
+
 
 .insert {
   margin-top: 4rem;
