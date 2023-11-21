@@ -8,9 +8,6 @@ f.innerHTML =
       <a href="javascript:link('reference.html')" class="foo">参考文献</a>
     </li>
     <li>
-      <a href="javascript:link('member.html')" class="foo">メンバー</a>
-    </li>
-    <li>
       <a href="javascript:link('policy.html')" class="foo">サイトポリシー</a>
     </li>
   </ul>
