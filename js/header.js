@@ -24,9 +24,9 @@ h.innerHTML =
   <li>
     <a href="javascript:link('301.html')" class="first in_menu is_parent">AIがもたらす未来</a>
     <ul>
-      <li><a href="javascript:link('301.html#hoge')">子メニュー</a></li>
-      <li><a href="">子メニュー</a></li>
-      <li><a href="">子メニュー</a></li>
+      <li><a href="javascript:link('301.html')">2045年問題</a></li>
+      <li><a href="javascript:link('302.html')">世界に起こる変化</a></li>
+      <li><a href="javascript:link('303.html')>まとめ</a></li>
     </ul>
   </li>
 </ul>
