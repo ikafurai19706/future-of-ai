@@ -10,8 +10,8 @@ f.innerHTML =
   </ul>
   <div class="footer-grid">
     <figure>
-      <a href="https://webcon.japias.jp/"><img src="img/webcontest.jpg"></a>
-      <p>このサイトは 全国中学高校Webコンテスト の出場作品です。 </p>
+      <a href="https://webcon.japias.jp/" target="_blank" rel="noreferrer noopener"><img src="img/webcontest.jpg"></a>
+      <p>このサイトは <a href="https://webcon.japias.jp/" target="_blank" rel="noreferrer noopener">全国中学高校Webコンテスト</a> の参加作品です。</p>
+      <p>©2023 FoAI team. ALL Rights Reserved.</p>
     </figure>
-    <figure><p>©2023 FoAI team. ALL Rights Reserved.</p></figure>
   </div>`;

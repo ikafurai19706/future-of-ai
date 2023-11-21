@@ -994,8 +994,7 @@ footer .bar {
 }
 
 footer .footer-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display:block;
 }
 
 footer figure {
@@ -1004,6 +1003,15 @@ footer figure {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+footer a {
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: gray;
 }
 
 footer p {
@@ -1031,11 +1039,22 @@ footer .menu li {
   transition: 0.4s;
 }
 
-footer .menu li:not(:first-child):after {
+footer .menu li::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 0;
+  width: 0.2rem;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+}
+
+footer .menu li:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
   width: 0.2rem;
   height: 50%;
   transform: translate(-50%, -50%);
@@ -1094,10 +1113,6 @@ footer .menu li a:hover {
 
   #grid {
     grid-template-columns: 0% 100% 0%;
-  }
-
-  footer .footer-grid {
-    display: block;
   }
 }
 
