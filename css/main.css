@@ -774,6 +774,7 @@ header .menu .now::after {
 }
 
 .main b {
+  font-weight: bold;
   background: linear-gradient(transparent 65%, #9ee 35%);
 }
 
