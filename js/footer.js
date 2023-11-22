@@ -2,6 +2,9 @@ f.innerHTML =
   `<div class="bar"></div>
   <ul class="menu">
     <li>
+      <a href="javascript:link('index.html')" class="foo">ホーム</a>
+    </li>
+    <li>
       <a href="javascript:link('sitemap.html')" class="foo">サイトマップ</a>
     </li>
     <li>
