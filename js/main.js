@@ -120,29 +120,31 @@ function header() {
   var vw = document.documentElement.clientWidth;
   var vh = document.documentElement.clientHeight;
   var img = t.getElementsByTagName("img")[0];
-  var vid1 = t.getElementsByTagName("video")[0];
-  var vid2 = t.getElementsByTagName("video")[1];
   t.style.height = vh * 0.6 + "px";
 
-  if (vw / vh > 1) {
+  if (vw / vh > img.clientWidth / img.clientHeight) {
     img.style.width = vw + "px";
     img.style.height = "auto";
   } else {
     img.style.width = "auto";
     img.style.height = vh + "px";
   }
-  if (vw / vh > 16/9) {
-    vid1.style.width = vw + "px";
-    vid1.style.height = vw / (16/9) + "px";
-    vid2.style.width = vw + "px";
-    vid2.style.height = vw / (16/9) + "px";
-  } else {
-    vid1.style.width = vh * (16/9) + "px";
-    vid1.style.height = vh + "px";
-    vid2.style.width = vh * (16/9) + "px";
-    vid2.style.height = vh + "px";
-  }
+  if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == "index.html") {
+    var vid1 = t.getElementsByTagName("video")[0];
+    var vid2 = t.getElementsByTagName("video")[1];
 
+    if (vw / vh > 16/9) {
+      vid1.style.width = vw + "px";
+      vid1.style.height = vw / (16/9) + "px";
+      vid2.style.width = vw + "px";
+      vid2.style.height = vw / (16/9) + "px";
+    } else {
+      vid1.style.width = vh * (16/9) + "px";
+      vid1.style.height = vh + "px";
+      vid2.style.width = vh * (16/9) + "px";
+      vid2.style.height = vh + "px";
+    }
+  }
 }
 
 
