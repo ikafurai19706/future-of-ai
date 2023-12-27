@@ -118,11 +118,11 @@ function menu() {
 
 function header() {
   var vw = document.documentElement.clientWidth;
-  var vh = document.documentElement.clientHeight;
+  var vh = document.documentElement.clientHeight * 0.6;
   var img = t.getElementsByTagName("img")[0];
-  t.style.height = vh * 0.6 + "px";
+  t.style.height = vh + "px";
 
-  if (vw / vh > img.clientWidth / img.clientHeight) {
+  if (vw / vh > img.naturalWidth / img.naturalHeight) {
     img.style.width = vw + "px";
     img.style.height = "auto";
   } else {
