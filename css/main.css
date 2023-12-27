@@ -735,6 +735,89 @@ header .menu .now::after {
   background-color: white;
 }
 
+.toc-005 {
+  margin: 5rem 8rem 0 8rem;
+  border-radius: 0.3rem;
+  background-color: #f6f6f6;
+}
+
+.toc-005 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #1c305c;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.toc-005 div::before {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  background-image: url('../img/toc.svg');
+  content: '';
+}
+
+.toc-005 label::after {
+  margin-left: 0.7rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #fff;
+  content: "[開く]";
+  cursor: pointer;
+}
+
+.toc-005:has(:checked) label::after {
+  content: "[閉じる]";
+}
+
+.toc-005 input {
+  display: none;
+}
+
+.toc-005 ol {
+  text-align: left;
+  list-style-type: disc;
+  margin: 0;
+  overflow: hidden;
+}
+
+.toc-005 > ol {
+  height: 0;
+}
+
+.toc-005:has(:checked) > ol {
+  height: auto;
+  padding: 2rem 2rem 2rem 4rem;
+}
+
+.toc-005 ol ol {
+  margin-top: 0.5rem;
+  padding-left: 1.1rem;
+}
+
+.toc-005 li {
+  padding: 1rem 0;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.toc-005 ol ol li {
+  padding-top: 2rem;
+  padding-bottom: 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.toc-005 a {
+  color: #333;
+  text-decoration: none;
+}
+
 .main h3 {
   color: #213;
   font-size: 2.4rem;
