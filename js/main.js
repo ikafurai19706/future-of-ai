@@ -79,7 +79,7 @@ function link(l) {
       m_id.classList.remove("off");
     });
     if (l.indexOf("#") > -1) {
-      location.href = l;
+      scroll(l.substring(l.indexOf("#")));
     } else {
       window.scrollTo(0, 0);
     }
@@ -91,13 +91,11 @@ function link(l) {
   }
 }
 
-function scroll() {
-  const targetId = location.hash;
-  const targetElement = document.querySelector(targetId);
-  const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
-  window.scrollTo({
-    top: targetOffsetTop
-  });
+function scroll(target) {
+  var tElement = document.querySelector(target);
+  var offsetTop = window.scrollY + tElement.getBoundingClientRect().top;
+  var py = offsetTop - h.clientHeight - 10;
+  window.scrollTo(0, py);
 }
 
 function anime() {
@@ -156,7 +154,7 @@ window.addEventListener("pageshow", () => {
   }, 300);
   setTimeout(load3, 200);
   setTimeout(header, 300);
-  setTimeout(scroll, 500);
+  setTimeout(scroll, 500, location.hash);
 });
 
 window.addEventListener("resize", () => {
