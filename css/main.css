@@ -735,13 +735,13 @@ header .menu .now::after {
   background-color: white;
 }
 
-.toc-005 {
+.toc {
   margin: 5rem 8rem 0 8rem;
   border-radius: 0.3rem;
   background-color: #f6f6f6;
 }
 
-.toc-005 div {
+.toc div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -753,7 +753,7 @@ header .menu .now::after {
   font-size: 1.7rem;
 }
 
-.toc-005 div::before {
+.toc div::before {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -762,7 +762,7 @@ header .menu .now::after {
   content: '';
 }
 
-.toc-005 label::after {
+.toc label::after {
   margin-left: 0.7rem;
   font-weight: 400;
   font-size: 1.2rem;
@@ -771,49 +771,49 @@ header .menu .now::after {
   cursor: pointer;
 }
 
-.toc-005:has(:checked) label::after {
+.toc:has(:checked) label::after {
   content: "[閉じる]";
 }
 
-.toc-005 input {
+.toc input {
   display: none;
 }
 
-.toc-005 ol {
+.toc ol {
   text-align: left;
   list-style-type: disc;
   margin: 0;
   overflow: hidden;
 }
 
-.toc-005 > ol {
+.toc > ol {
   height: 0;
 }
 
-.toc-005:has(:checked) > ol {
+.toc:has(:checked) > ol {
   height: auto;
   padding: 2rem 2rem 2rem 4rem;
 }
 
-.toc-005 ol ol {
+.toc ol ol {
   margin-top: 0.5rem;
   padding-left: 1.1rem;
 }
 
-.toc-005 li {
+.toc li {
   padding: 1rem 0;
   font-weight: 600;
   font-size: 1.6rem;
 }
 
-.toc-005 ol ol li {
+.toc ol ol li {
   padding-top: 2rem;
   padding-bottom: 0;
   font-weight: 500;
   font-size: 1.4rem;
 }
 
-.toc-005 a {
+.toc a {
   color: #333;
   text-decoration: none;
 }

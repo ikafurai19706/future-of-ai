@@ -121,26 +121,28 @@ function header() {
   t.style.height = vh + "px";
 
   if (vw / vh > img.naturalWidth / img.naturalHeight) {
-    img.style.width = vw + "px";
+    img.style.width = "100%";
     img.style.height = "auto";
   } else {
     img.style.width = "auto";
-    img.style.height = vh + "px";
+    img.style.height = "100%";
   }
-  if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == "index.html") {
+  var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1); 
+  if (path == "index.html" || path == "") {
+    console.log("hoge");
     var vid1 = t.getElementsByTagName("video")[0];
     var vid2 = t.getElementsByTagName("video")[1];
 
     if (vw / vh > 16/9) {
-      vid1.style.width = vw + "px";
-      vid1.style.height = vw / (16/9) + "px";
-      vid2.style.width = vw + "px";
-      vid2.style.height = vw / (16/9) + "px";
+      vid1.style.width = "100%";
+      vid1.style.height = "auto";
+      vid2.style.width = "100%";
+      vid2.style.height = "auto";
     } else {
-      vid1.style.width = vh * (16/9) + "px";
-      vid1.style.height = vh + "px";
-      vid2.style.width = vh * (16/9) + "px";
-      vid2.style.height = vh + "px";
+      vid1.style.width = "auto";
+      vid1.style.height = "100%";
+      vid2.style.width = "auto";
+      vid2.style.height = "100%";
     }
   }
 }
