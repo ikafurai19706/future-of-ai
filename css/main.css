@@ -886,8 +886,6 @@ header .menu .now::after {
   justify-content: center;
 }
 
-
-
 .insert {
   margin-top: 4rem;
   width: 70%;
@@ -899,6 +897,11 @@ header .menu .now::after {
   font-size: 1.2rem;
   color: gray;
   width: 70%;
+}
+
+.main .cap {
+  font-size: 1.2rem;
+  color: gray;
 }
 
 .force_aspect_ratio {
