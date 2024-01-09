@@ -10,6 +10,9 @@ f.innerHTML =
     <li>
       <a href="javascript:link('reference.html')" class="foo">参考文献</a>
     </li>
+    <li>
+      <a href="javascript:link('comment.html')" class="foo">コメント</a>
+    </li>
   </ul>
   <div class="footer-grid">
     <figure>
